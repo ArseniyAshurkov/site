@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Style.css">
+<link rel="shortcut icon" href=" favicon.png" type="image/png">
+  <style>
+   ul {
+    width: 170px; /* Ширина меню */
+    list-style: none; /* Для списка убираем маркеры */
+    margin: 0; /* Нет отступов вокруг */
+    padding: 0; /* Убираем поля вокруг текста */
+    font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+    font-size: 12pt; /* Размер названий в пункте меню */
+   }
+   li ul {
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-left: 0px; /* Сдвигаем подменю вправо */
+    margin-top: 0em; /* Сдвигаем подменю вверх */
+   }
+   li a {
+    display: block; /* Ссылка как блочный элемент */
+    padding: 3px; /* Поля вокруг надписи */
+    text-decoration: none; /* Подчеркивание у ссылок убираем */
+    color: #00000; /* Цвет текста */
+    border: 0px solid #ccc;/* Рамка вокруг пунктов меню */
+    background-color: linear-gradient(to top left, #18e6ff, #fff759); /* Цвет фона */
+    border-bottom: none; /* Границу снизу не проводим */
+   }
+   li a:hover {
+    color: #ffe; /* Цвет текста активного пункта */
+    background-color: #15cfe5; /* Цвет фона активного пункта */
+   }
+   li:hover ul { 
+    display: block; /* При выделении пункта курсором мыши отображается подменю */
+   }
+   .brd {
+    border-bottom: 0px solid #ccc; /* Линия снизу */
+   }
+  </style>
+  <style>
+   li {
+    padding-left: 1px; /* Отступ от маркера до текста */
+   }
+  </style>
+<style type="text/css">
+ .space { 
+  height: 185px;
+  background: linear-gradient(to top left, #18e6ff, #fff759);
+  padding: 12px; /* Поля */
+  border: 2px solid #0f0f0f; /* Параметры рамки */
+  border-radius: 12px;
+  width: 17.5%;
+ }
+  </style>
+</head>
+<body background="background.png">
+	<img src="logo.png">
+	<div class="space">
+	<ul class="menu">
+   	<li><a href="site_main.html"><p><b>Главная страница</b></p></a>
+   	<ul> 
+     	<li><a href="Page_1.html">Страница 1</a></li> 
+     	<li><a href="Page_2.html">Страница 2</a></li> 
+     	<li><a href="Page_3.html">Страница 3</a></li> 
+   	 </ul> 
+	</div>
+
+
+	
+</body>
+</html>
